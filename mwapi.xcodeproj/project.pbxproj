@@ -1,0 +1,540 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8D3CA1EB164F83D70016DF6E /* MWApi.m in Sources */ = {isa = PBXBuildFile; fileRef = D42F2D721648020B00131D98 /* MWApi.m */; };
+		8D3CA1EC164F9A0F0016DF6E /* XPathQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = B24BC150164E48B900920AA6 /* XPathQuery.m */; };
+		8D3CA1ED164F9E860016DF6E /* NSString+Extras.m in Sources */ = {isa = PBXBuildFile; fileRef = B24BC1A0164EAB6E00920AA6 /* NSString+Extras.m */; };
+		8D3CA1EE164F9E860016DF6E /* NSURLRequest+DictionaryRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B24BC1A3164EAC4F00920AA6 /* NSURLRequest+DictionaryRequest.m */; };
+		8D3CA1EF164F9E860016DF6E /* Http.m in Sources */ = {isa = PBXBuildFile; fileRef = B24BC1A6164EB55900920AA6 /* Http.m */; };
+		8D3CA1F0164F9E860016DF6E /* MWApiResult.m in Sources */ = {isa = PBXBuildFile; fileRef = D496FAF016485058007216ED /* MWApiResult.m */; };
+		8D3CA1F1164F9E860016DF6E /* MWApiRequestBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = D496FAF31648506C007216ED /* MWApiRequestBuilder.m */; };
+		8D3CA1F2164F9EE50016DF6E /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B24BC152164E491700920AA6 /* libxml2.dylib */; };
+		8D981C0F166B9B3100C6A42A /* MWApiMultipartRequestBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D981C0E166B9B3100C6A42A /* MWApiMultipartRequestBuilder.m */; };
+		8D9CA656166BDA1000AD008C /* MWApiMultipartRequestBuilder.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8D981C0D166B9B3100C6A42A /* MWApiMultipartRequestBuilder.h */; };
+		8DB1EB2C166B323C001AA4BA /* XPathQuery.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B24BC14F164E48B900920AA6 /* XPathQuery.h */; };
+		8DB1EB2D166B323C001AA4BA /* NSString+Extras.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B24BC19F164EAB6D00920AA6 /* NSString+Extras.h */; };
+		8DB1EB2E166B323C001AA4BA /* NSURLRequest+DictionaryRequest.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B24BC1A2164EAC4E00920AA6 /* NSURLRequest+DictionaryRequest.h */; };
+		8DB1EB2F166B323C001AA4BA /* Http.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B24BC1A5164EB55900920AA6 /* Http.h */; };
+		8DB1EB31166B323C001AA4BA /* MWApiResult.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D496FAEF16485058007216ED /* MWApiResult.h */; };
+		8DB1EB32166B323C001AA4BA /* MWApiRequestBuilder.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D496FAF21648506C007216ED /* MWApiRequestBuilder.h */; };
+		8DB1EB33166B323C001AA4BA /* MWApiProgressListener.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D496FAF51648519D007216ED /* MWApiProgressListener.h */; };
+		B24BC151164E48B900920AA6 /* XPathQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = B24BC150164E48B900920AA6 /* XPathQuery.m */; };
+		B24BC153164E491700920AA6 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B24BC152164E491700920AA6 /* libxml2.dylib */; };
+		B24BC1A1164EAB6E00920AA6 /* NSString+Extras.m in Sources */ = {isa = PBXBuildFile; fileRef = B24BC1A0164EAB6E00920AA6 /* NSString+Extras.m */; };
+		B24BC1A4164EAC4F00920AA6 /* NSURLRequest+DictionaryRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B24BC1A3164EAC4F00920AA6 /* NSURLRequest+DictionaryRequest.m */; };
+		B24BC1A7164EB55900920AA6 /* Http.m in Sources */ = {isa = PBXBuildFile; fileRef = B24BC1A6164EB55900920AA6 /* Http.m */; };
+		D42F2D6C1648020B00131D98 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D42F2D6B1648020B00131D98 /* Foundation.framework */; };
+		D42F2D711648020B00131D98 /* MWApi.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D42F2D701648020B00131D98 /* MWApi.h */; };
+		D42F2D731648020B00131D98 /* MWApi.m in Sources */ = {isa = PBXBuildFile; fileRef = D42F2D721648020B00131D98 /* MWApi.m */; };
+		D42F2D7B1648020C00131D98 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D42F2D7A1648020C00131D98 /* SenTestingKit.framework */; };
+		D42F2D7D1648020C00131D98 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D42F2D7C1648020C00131D98 /* UIKit.framework */; };
+		D42F2D7E1648020C00131D98 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D42F2D6B1648020B00131D98 /* Foundation.framework */; };
+		D42F2D811648020C00131D98 /* libmwapi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D42F2D681648020B00131D98 /* libmwapi.a */; };
+		D42F2D871648020C00131D98 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D42F2D851648020C00131D98 /* InfoPlist.strings */; };
+		D42F2D8A1648020C00131D98 /* mwapiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D42F2D891648020C00131D98 /* mwapiTests.m */; };
+		D496FAF116485058007216ED /* MWApiResult.m in Sources */ = {isa = PBXBuildFile; fileRef = D496FAF016485058007216ED /* MWApiResult.m */; };
+		D496FAF41648506C007216ED /* MWApiRequestBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = D496FAF31648506C007216ED /* MWApiRequestBuilder.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D42F2D7F1648020C00131D98 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D42F2D5F1648020B00131D98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D42F2D671648020B00131D98;
+			remoteInfo = mwapi;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D42F2D661648020B00131D98 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+				8D9CA656166BDA1000AD008C /* MWApiMultipartRequestBuilder.h in CopyFiles */,
+				8DB1EB2C166B323C001AA4BA /* XPathQuery.h in CopyFiles */,
+				8DB1EB2D166B323C001AA4BA /* NSString+Extras.h in CopyFiles */,
+				8DB1EB2E166B323C001AA4BA /* NSURLRequest+DictionaryRequest.h in CopyFiles */,
+				8DB1EB2F166B323C001AA4BA /* Http.h in CopyFiles */,
+				8DB1EB31166B323C001AA4BA /* MWApiResult.h in CopyFiles */,
+				8DB1EB32166B323C001AA4BA /* MWApiRequestBuilder.h in CopyFiles */,
+				8DB1EB33166B323C001AA4BA /* MWApiProgressListener.h in CopyFiles */,
+				D42F2D711648020B00131D98 /* MWApi.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8D981C0D166B9B3100C6A42A /* MWApiMultipartRequestBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MWApiMultipartRequestBuilder.h; path = mwapi/MWApiMultipartRequestBuilder.h; sourceTree = "<group>"; };
+		8D981C0E166B9B3100C6A42A /* MWApiMultipartRequestBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MWApiMultipartRequestBuilder.m; path = mwapi/MWApiMultipartRequestBuilder.m; sourceTree = "<group>"; };
+		8D9EE9C0166A079E00D4F7E7 /* test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = test.png; path = ../mwapi/test.png; sourceTree = "<group>"; };
+		B24BC14F164E48B900920AA6 /* XPathQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPathQuery.h; sourceTree = "<group>"; };
+		B24BC150164E48B900920AA6 /* XPathQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPathQuery.m; sourceTree = "<group>"; };
+		B24BC152164E491700920AA6 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		B24BC19F164EAB6D00920AA6 /* NSString+Extras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extras.h"; sourceTree = "<group>"; };
+		B24BC1A0164EAB6E00920AA6 /* NSString+Extras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extras.m"; sourceTree = "<group>"; };
+		B24BC1A2164EAC4E00920AA6 /* NSURLRequest+DictionaryRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLRequest+DictionaryRequest.h"; sourceTree = "<group>"; };
+		B24BC1A3164EAC4F00920AA6 /* NSURLRequest+DictionaryRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLRequest+DictionaryRequest.m"; sourceTree = "<group>"; };
+		B24BC1A5164EB55900920AA6 /* Http.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Http.h; sourceTree = "<group>"; };
+		B24BC1A6164EB55900920AA6 /* Http.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Http.m; sourceTree = "<group>"; };
+		D42F2D681648020B00131D98 /* libmwapi.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libmwapi.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D42F2D6B1648020B00131D98 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D42F2D6F1648020B00131D98 /* mwapi-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "mwapi-Prefix.pch"; sourceTree = "<group>"; };
+		D42F2D701648020B00131D98 /* MWApi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MWApi.h; sourceTree = "<group>"; };
+		D42F2D721648020B00131D98 /* MWApi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MWApi.m; sourceTree = "<group>"; };
+		D42F2D791648020C00131D98 /* mwapiTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mwapiTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D42F2D7A1648020C00131D98 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		D42F2D7C1648020C00131D98 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		D42F2D841648020C00131D98 /* mwapiTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "mwapiTests-Info.plist"; sourceTree = "<group>"; };
+		D42F2D861648020C00131D98 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D42F2D881648020C00131D98 /* mwapiTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mwapiTests.h; sourceTree = "<group>"; };
+		D42F2D891648020C00131D98 /* mwapiTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mwapiTests.m; sourceTree = "<group>"; };
+		D496FAEF16485058007216ED /* MWApiResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MWApiResult.h; path = mwapi/MWApiResult.h; sourceTree = "<group>"; };
+		D496FAF016485058007216ED /* MWApiResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MWApiResult.m; path = mwapi/MWApiResult.m; sourceTree = "<group>"; };
+		D496FAF21648506C007216ED /* MWApiRequestBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MWApiRequestBuilder.h; path = mwapi/MWApiRequestBuilder.h; sourceTree = "<group>"; };
+		D496FAF31648506C007216ED /* MWApiRequestBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MWApiRequestBuilder.m; path = mwapi/MWApiRequestBuilder.m; sourceTree = "<group>"; };
+		D496FAF51648519D007216ED /* MWApiProgressListener.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MWApiProgressListener.h; path = mwapi/MWApiProgressListener.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D42F2D651648020B00131D98 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B24BC153164E491700920AA6 /* libxml2.dylib in Frameworks */,
+				D42F2D6C1648020B00131D98 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D42F2D751648020C00131D98 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D3CA1F2164F9EE50016DF6E /* libxml2.dylib in Frameworks */,
+				D42F2D7B1648020C00131D98 /* SenTestingKit.framework in Frameworks */,
+				D42F2D7D1648020C00131D98 /* UIKit.framework in Frameworks */,
+				D42F2D7E1648020C00131D98 /* Foundation.framework in Frameworks */,
+				D42F2D811648020C00131D98 /* libmwapi.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8D19D0041668675400747099 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D496FAEF16485058007216ED /* MWApiResult.h */,
+				D496FAF016485058007216ED /* MWApiResult.m */,
+				8D981C0D166B9B3100C6A42A /* MWApiMultipartRequestBuilder.h */,
+				8D981C0E166B9B3100C6A42A /* MWApiMultipartRequestBuilder.m */,
+				D496FAF21648506C007216ED /* MWApiRequestBuilder.h */,
+				D496FAF31648506C007216ED /* MWApiRequestBuilder.m */,
+				D496FAF51648519D007216ED /* MWApiProgressListener.h */,
+			);
+			name = Model;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		8D9EE9C1166A0D3800D4F7E7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8D9EE9C0166A079E00D4F7E7 /* test.png */,
+			);
+			name = Resources;
+			path = mwapiTests;
+			sourceTree = SOURCE_ROOT;
+		};
+		B24BC146164E356300920AA6 /* Http */ = {
+			isa = PBXGroup;
+			children = (
+				B24BC1A5164EB55900920AA6 /* Http.h */,
+				B24BC1A6164EB55900920AA6 /* Http.m */,
+			);
+			name = Http;
+			sourceTree = "<group>";
+		};
+		B24BC14A164E488600920AA6 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				B24BC14F164E48B900920AA6 /* XPathQuery.h */,
+				B24BC150164E48B900920AA6 /* XPathQuery.m */,
+				B24BC19F164EAB6D00920AA6 /* NSString+Extras.h */,
+				B24BC1A0164EAB6E00920AA6 /* NSString+Extras.m */,
+				B24BC1A2164EAC4E00920AA6 /* NSURLRequest+DictionaryRequest.h */,
+				B24BC1A3164EAC4F00920AA6 /* NSURLRequest+DictionaryRequest.m */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		D42F2D5D1648020B00131D98 = {
+			isa = PBXGroup;
+			children = (
+				B24BC152164E491700920AA6 /* libxml2.dylib */,
+				D42F2D6D1648020B00131D98 /* mwapi */,
+				D42F2D821648020C00131D98 /* mwapiTests */,
+				D42F2D6A1648020B00131D98 /* Frameworks */,
+				D42F2D691648020B00131D98 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D42F2D691648020B00131D98 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D42F2D681648020B00131D98 /* libmwapi.a */,
+				D42F2D791648020C00131D98 /* mwapiTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D42F2D6A1648020B00131D98 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D42F2D6B1648020B00131D98 /* Foundation.framework */,
+				D42F2D7A1648020C00131D98 /* SenTestingKit.framework */,
+				D42F2D7C1648020C00131D98 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D42F2D6D1648020B00131D98 /* mwapi */ = {
+			isa = PBXGroup;
+			children = (
+				B24BC14A164E488600920AA6 /* Utils */,
+				B24BC146164E356300920AA6 /* Http */,
+				D42F2D701648020B00131D98 /* MWApi.h */,
+				D42F2D721648020B00131D98 /* MWApi.m */,
+				8D19D0041668675400747099 /* Model */,
+				D42F2D6E1648020B00131D98 /* Supporting Files */,
+				8D9EE9C1166A0D3800D4F7E7 /* Resources */,
+			);
+			path = mwapi;
+			sourceTree = "<group>";
+		};
+		D42F2D6E1648020B00131D98 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D42F2D6F1648020B00131D98 /* mwapi-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D42F2D821648020C00131D98 /* mwapiTests */ = {
+			isa = PBXGroup;
+			children = (
+				D42F2D881648020C00131D98 /* mwapiTests.h */,
+				D42F2D891648020C00131D98 /* mwapiTests.m */,
+				D42F2D831648020C00131D98 /* Supporting Files */,
+			);
+			path = mwapiTests;
+			sourceTree = "<group>";
+		};
+		D42F2D831648020C00131D98 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D42F2D841648020C00131D98 /* mwapiTests-Info.plist */,
+				D42F2D851648020C00131D98 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D42F2D671648020B00131D98 /* mwapi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D42F2D8D1648020C00131D98 /* Build configuration list for PBXNativeTarget "mwapi" */;
+			buildPhases = (
+				D42F2D641648020B00131D98 /* Sources */,
+				D42F2D651648020B00131D98 /* Frameworks */,
+				D42F2D661648020B00131D98 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = mwapi;
+			productName = mwapi;
+			productReference = D42F2D681648020B00131D98 /* libmwapi.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		D42F2D781648020C00131D98 /* mwapiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D42F2D901648020C00131D98 /* Build configuration list for PBXNativeTarget "mwapiTests" */;
+			buildPhases = (
+				D42F2D741648020C00131D98 /* Sources */,
+				D42F2D751648020C00131D98 /* Frameworks */,
+				D42F2D761648020C00131D98 /* Resources */,
+				D42F2D771648020C00131D98 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D42F2D801648020C00131D98 /* PBXTargetDependency */,
+			);
+			name = mwapiTests;
+			productName = mwapiTests;
+			productReference = D42F2D791648020C00131D98 /* mwapiTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D42F2D5F1648020B00131D98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Wikimedia Foundation";
+			};
+			buildConfigurationList = D42F2D621648020B00131D98 /* Build configuration list for PBXProject "mwapi" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D42F2D5D1648020B00131D98;
+			productRefGroup = D42F2D691648020B00131D98 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D42F2D671648020B00131D98 /* mwapi */,
+				D42F2D781648020C00131D98 /* mwapiTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D42F2D761648020C00131D98 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D42F2D871648020C00131D98 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D42F2D771648020C00131D98 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D42F2D641648020B00131D98 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D42F2D731648020B00131D98 /* MWApi.m in Sources */,
+				D496FAF116485058007216ED /* MWApiResult.m in Sources */,
+				D496FAF41648506C007216ED /* MWApiRequestBuilder.m in Sources */,
+				B24BC151164E48B900920AA6 /* XPathQuery.m in Sources */,
+				B24BC1A1164EAB6E00920AA6 /* NSString+Extras.m in Sources */,
+				B24BC1A4164EAC4F00920AA6 /* NSURLRequest+DictionaryRequest.m in Sources */,
+				B24BC1A7164EB55900920AA6 /* Http.m in Sources */,
+				8D981C0F166B9B3100C6A42A /* MWApiMultipartRequestBuilder.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D42F2D741648020C00131D98 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D3CA1ED164F9E860016DF6E /* NSString+Extras.m in Sources */,
+				8D3CA1EE164F9E860016DF6E /* NSURLRequest+DictionaryRequest.m in Sources */,
+				8D3CA1EF164F9E860016DF6E /* Http.m in Sources */,
+				8D3CA1F0164F9E860016DF6E /* MWApiResult.m in Sources */,
+				8D3CA1F1164F9E860016DF6E /* MWApiRequestBuilder.m in Sources */,
+				8D3CA1EC164F9A0F0016DF6E /* XPathQuery.m in Sources */,
+				8D3CA1EB164F83D70016DF6E /* MWApi.m in Sources */,
+				D42F2D8A1648020C00131D98 /* mwapiTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D42F2D801648020C00131D98 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D42F2D671648020B00131D98 /* mwapi */;
+			targetProxy = D42F2D7F1648020C00131D98 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D42F2D851648020C00131D98 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D42F2D861648020C00131D98 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D42F2D8B1648020C00131D98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					arm6,
+					armv7,
+				);
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D42F2D8C1648020C00131D98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					arm6,
+					armv7,
+				);
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D42F2D8E1648020C00131D98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/mwapi.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "mwapi/mwapi-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		D42F2D8F1648020C00131D98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/mwapi.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "mwapi/mwapi-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		D42F2D911648020C00131D98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "mwapi/mwapi-Prefix.pch";
+				INFOPLIST_FILE = "mwapiTests/mwapiTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		D42F2D921648020C00131D98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "mwapi/mwapi-Prefix.pch";
+				INFOPLIST_FILE = "mwapiTests/mwapiTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D42F2D621648020B00131D98 /* Build configuration list for PBXProject "mwapi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D42F2D8B1648020C00131D98 /* Debug */,
+				D42F2D8C1648020C00131D98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D42F2D8D1648020C00131D98 /* Build configuration list for PBXNativeTarget "mwapi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D42F2D8E1648020C00131D98 /* Debug */,
+				D42F2D8F1648020C00131D98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D42F2D901648020C00131D98 /* Build configuration list for PBXNativeTarget "mwapiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D42F2D911648020C00131D98 /* Debug */,
+				D42F2D921648020C00131D98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D42F2D5F1648020B00131D98 /* Project object */;
+}
